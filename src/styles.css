@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.EfectoSeleccion:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+  h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(98, 0, 0);
+}
+body {
+  position: relative;
+  height: 100%;
+}

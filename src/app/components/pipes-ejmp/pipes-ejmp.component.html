@@ -1,0 +1,93 @@
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-4 col-left">
+            <div id="list-example" class="list-group list-group-numbered">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Lowercase Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Uppercase Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">TitleCase Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Slice Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-5">Json Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-6">Decimal Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-7">Percent Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-8">Currency Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-9">Date Pipe</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-10">Async Pipe</a>
+              </div>
+        </div>
+        <div class="col-6 col-right list-group-edi">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                <div id="list-item-1">
+                    <h2>Lowercase Pipe</h2>
+                    <h3>{{ name | lowercase }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-2">
+                    <h2>Uppercase Pipe</h2>
+                    <h3>{{ name | uppercase }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-3">
+                    <h2>TitleCase Pipe</h2>
+                    <h3>{{ message }}</h3>
+                    <h3>{{ message | titlecase }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-4">
+                    <h2>Slice Pipe</h2>
+                    <h3>{{ name }}</h3>
+                    <h3>{{ name | slice:4 }}</h3>
+                    <h3>{{ name | slice:4:6 }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-5">
+                    <h2>Json Pipe</h2>
+                    <h3>{{ person | json }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-6">
+                    <h2>Decimal Pipe</h2>
+                    <h3>{{ decimal | number: '1.2-3' }}</h3>
+                    <h3>{{ decimal | number: '3.4-5' }}</h3>
+                    <h3>{{ decimal | number: '3.1-2' }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-7">
+                    <h2>Percent Pipe</h2>
+                    <h3>{{ porcentaje }}</h3>
+                    <h3>{{ porcentaje | percent }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-8">
+                    <h2>Currency Pipe</h2>
+                    <h3>{{ moneda }}</h3>
+                    <h3>{{ moneda | currency }}</h3>
+                    <h3>{{ moneda | currency: 'GBP' }}</h3>
+                    <h3>{{ moneda | currency: 'EUR' }}</h3>
+                    <h3>{{ moneda | currency: 'EUR': 'code' }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-9">
+                    <h2>Date Pipe</h2>
+                    <h3>{{ date }}</h3>
+                    <h3>{{ date | date:'mm:ss' }}</h3>
+                    <h3>{{ date | date:'short' }}</h3>
+                    <h3>{{ date | date:'shortDate' }}</h3>
+                    <h3>{{ date | date:'shortTime' }}</h3>
+                    <h3>{{ date | date:'medium' }}</h3>
+                    <h3>{{ date | date:'long' }}</h3>
+                </div>
+                <hr>
+                <div id="list-item-10">
+                    <h2>Async Pipe</h2>
+                    <div>
+                        <code>promise|async</code>:
+                        <br>
+                        <button type="button" class="btn btn-primary" (click)="clicked()" aria-describedby="helpId">{{ arrived ? 'Reset' : 'Resolve' }}</button>
+                       <span class="mx-3">Wait for it... {{ greeting | async }}</span>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+
